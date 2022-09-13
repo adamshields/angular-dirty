@@ -1,0 +1,8 @@
+<div class="control-section">
+  <form [formGroup]="formGroup">
+    <ejs-dropdownlist [dataSource]="sportsData" formControlName="selectedItem">
+    </ejs-dropdownlist>
+    <button (click)="onBtnClick()">Check dirty</button>
+  </form>
+</div>
+<pre>Dirty: {{ formGroup.dirty }}</pre>
